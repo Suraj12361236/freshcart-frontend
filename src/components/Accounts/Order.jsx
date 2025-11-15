@@ -1,6 +1,6 @@
 import React from 'react'
-import Sidebar from '../Accounts.jsx/Sidebar'
-import Ordertable from '../Accounts.jsx/Ordertable'
+import Sidebar from '../Accounts/Sidebar'
+import Ordertable from '../Accounts/Ordertable'
 import Navbar from '../../pages/Navbar'
 import Footer from '../../pages/Footer'
 

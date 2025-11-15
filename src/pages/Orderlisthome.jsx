@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../components/Dashboard.jsx/Sidebar'
+import Sidebar from '../components/Dashboard/Sidebar'
 import OrderListPage from './Order-list'
 
 function Orderlisthome() {

@@ -1,6 +1,6 @@
 import React from 'react'
-import Sidebar from './Dashboard.jsx/Sidebar'
-import Dashboardproducts from './Dashboard.jsx/Dashboardproduct'
+import Sidebar from './Dashboard/Sidebar'
+import Dashboardproducts from './Dashboard/Dashboardproduct'
 
 function Producthome() {
     return (
