@@ -12,7 +12,7 @@ export default function AddProduct() {
   }
 
   let productadd = () => {
-    axios.post("http://localhost:5001/addproduct", { addproduct }).then((res) => {
+    axios.post("https://freshcart-backend-umber.vercel.app/addproduct", { addproduct }).then((res) => {
       if (res.data.status) {
         Swal.fire({
           text: "Product Add ...",

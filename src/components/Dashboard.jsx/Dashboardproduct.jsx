@@ -77,7 +77,7 @@ const Dashboardproducts = () => {
 
   // deleteproduct -------------------------------
   let deleteproduct = (product) => {
-    axios.post("http://localhost:5001/deleteproductitem", { product })
+    axios.post("https://freshcart-backend-umber.vercel.app/deleteproductitem", { product })
     window.location.reload()
   }
 

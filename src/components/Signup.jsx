@@ -14,7 +14,7 @@ function Signup() {
   }
 
   let signupbtn = () => {
-    axios.post("http://localhost:5001/signup", { signup }).then((res) => {
+    axios.post("https://freshcart-backend-umber.vercel.app/signup", { signup }).then((res) => {
       if (res.data.status) {
         Swal.fire({
           text: "successfully signup...",

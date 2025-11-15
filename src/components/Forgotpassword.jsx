@@ -13,7 +13,7 @@ function Forgotpassword() {
   }
   let forgotbtn = () => {
     if (forgot.newpassword == forgot.confirmpassword) {
-      axios.post("http://localhost:5001/forgotpassword", { forgot }).then((res) => {
+      axios.post("https://freshcart-backend-umber.vercel.app/forgotpassword", { forgot }).then((res) => {
         if (res.data.status) {
           Swal.fire({
             text: "password update...",

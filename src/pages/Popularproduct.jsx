@@ -12,7 +12,7 @@ const PopularProducts = () => {
   },[])
 
     let getproduct=()=>{
-      axios.get("http://localhost:5001/ourproduct").then((res)=>{
+      axios.get("https://freshcart-backend-umber.vercel.app/ourproduct").then((res)=>{
         if(res.data.status){
           setproducts(res.data.myproducts)
         }

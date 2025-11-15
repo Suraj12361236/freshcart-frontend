@@ -25,7 +25,7 @@ function ProductDetailsPage() {
 
 
     let wishlist = (wishlistitem) => {
-        axios.post("http://localhost:5001/wishlist", { wishlistitem }).then((res) => {
+        axios.post("https://freshcart-backend-umber.vercel.app/wishlist", { wishlistitem }).then((res) => {
             if (res.data.status) {
                 Swal.fire({
                     text: "Product added to wishlist",
@@ -48,7 +48,7 @@ function ProductDetailsPage() {
 
 
     let addtocart = (cartitem) => {
-        axios.post("http://localhost:5001/addtocart", { cartitem }).then((res) => {
+        axios.post("https://freshcart-backend-umber.vercel.app/addtocart", { cartitem }).then((res) => {
             if (res.data.status) {
                 Swal.fire({
                     text: "Product added to cart",

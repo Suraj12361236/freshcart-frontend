@@ -12,7 +12,7 @@ const Wishlist = () => {
 
 
   let getwishlist = () => {
-    axios.get("http://localhost:5001/wishlistproduct").then((res) => {
+    axios.get("https://freshcart-backend-umber.vercel.app/wishlistproduct").then((res) => {
       if (res.data.status) {
         setproducts(res.data.wishlistitem)
       }
@@ -31,7 +31,7 @@ const Wishlist = () => {
 
   // deleteitem -----------
   let deleteitem=(item)=>{
-    axios.post("http://localhost:5001/deletewishlistitem",{item})
+    axios.post("https://freshcart-backend-umber.vercel.app/deletewishlistitem",{item})
     window.location.reload()
   }
 

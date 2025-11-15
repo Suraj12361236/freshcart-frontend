@@ -23,7 +23,7 @@ function Deleteaccount() {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.post("http://localhost:5001/deleteaccount", { "deleteemail": email }).then((res) => {
+                axios.post("https://freshcart-backend-umber.vercel.app/deleteaccount", { "deleteemail": email }).then((res) => {
                     if (res.data.status) {
                         Swal.fire({
                             text: "Acoount Deleted!",

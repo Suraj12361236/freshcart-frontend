@@ -14,7 +14,7 @@ function Passwordsetting() {
 
     let passwordbtn = () => {
         if (password.newpassword == password.confirmpassword) {
-            axios.post("http://localhost:5001/password", { password }).then((res) => {
+            axios.post("https://freshcart-backend-umber.vercel.app/password", { password }).then((res) => {
                 if (res.data.status) {
                     Swal.fire({
                         text: "password update...",

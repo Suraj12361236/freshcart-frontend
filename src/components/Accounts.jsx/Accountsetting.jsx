@@ -14,7 +14,7 @@ function Accountsetting() {
     }
 
     let accountsbtn = () => {
-        axios.post("http://localhost:5001/accountsetting", { accountsetting }).then((res) => {
+        axios.post("https://freshcart-backend-umber.vercel.app/accountsetting", { accountsetting }).then((res) => {
                         if (res.data.status) {
                             Swal.fire({
                                 text: "account update...",

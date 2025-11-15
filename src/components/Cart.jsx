@@ -15,7 +15,7 @@ const CartPage = () => {
 
 
   let getcart = () => {
-    axios.get("http://localhost:5001/cartproduct").then((res) => {
+    axios.get("https://freshcart-backend-umber.vercel.app/cartproduct").then((res) => {
       if (res.data.status) {
         setproducts(res.data.cartproduct)
       }
@@ -42,7 +42,7 @@ const CartPage = () => {
   let Cartitems = ({ data }) => {
     // deletedata-------------------------
     let deletedata = (item) => {
-      axios.post("http://localhost:5001/deletecartdata", { item })
+      axios.post("https://freshcart-backend-umber.vercel.app/deletecartdata", { item })
       window.location.reload()
     }
 
@@ -53,13 +53,13 @@ const CartPage = () => {
 
     let increasequantity = () => {
       setquantity(++quantity)
-      axios.post("http://localhost:5001/updatecartitem",{quantity,data})
+      axios.post("https://freshcart-backend-umber.vercel.app/updatecartitem",{quantity,data})
       window.location.reload()
     }
     let decreasequantity = () => {
       if (quantity > 1) {
         setquantity(--quantity)
-        axios.post("http://localhost:5001/updatecartitem",{quantity,data})
+        axios.post("https://freshcart-backend-umber.vercel.app/updatecartitem",{quantity,data})
       window.location.reload()
 
       }
